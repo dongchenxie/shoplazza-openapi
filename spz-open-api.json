@@ -3375,6 +3375,7 @@
         "deprecated": false
       },
       "delete": {
+        "tags": ["Product"],
         "summary": "Delete Metafield",
         "description": "",
         "operationId": "delate-metafield",
@@ -3408,6 +3409,7 @@
         "deprecated": false
       },
       "put": {
+        "tags": ["Product"],
         "summary": "Update Metafield",
         "description": "",
         "operationId": "update-metafield",
@@ -3652,6 +3654,7 @@
         "deprecated": false
       },
       "post": {
+        "tags": ["Product"],
         "summary": "Create Collection",
         "description": "",
         "operationId": "create_collection",
@@ -3949,6 +3952,7 @@
         "deprecated": false
       },
       "put": {
+        "tags": ["Product"],
         "summary": "Update Collection",
         "description": "",
         "operationId": "update_collection",
@@ -4113,6 +4117,7 @@
         "deprecated": false
       },
       "delete": {
+        "tags": ["Product"],
         "summary": "Delete Collection",
         "description": "",
         "operationId": "delete_collection",
@@ -4255,6 +4260,7 @@
         "deprecated": false
       },
       "get": {
+        "tags": ["Product"],
         "summary": "Collect List",
         "description": "",
         "operationId": "collect_list",
@@ -4407,6 +4413,7 @@
         "deprecated": false
       },
       "get": {
+        "tags": ["Product"],
         "summary": "Collect Details",
         "description": "",
         "operationId": "collect_show",
@@ -13105,7 +13112,7 @@
     },
     "/openapi/2022-01/redirects": {
       "post": {
-        "tags": ["Discounts"],
+        "tags": ["Redirect"],
         "summary": "Create Redirect",
         "description": "",
         "operationId": "create-redirect",
@@ -13172,6 +13179,7 @@
         "deprecated": false
       },
       "get": {
+        "tags": ["Redirect"],
         "summary": "Redirect List",
         "description": "",
         "operationId": "redirect-list",
@@ -13248,7 +13256,7 @@
     },
     "/openapi/2022-01/redirects/{id}": {
       "get": {
-        "tags": ["Discounts"],
+        "tags": ["Redirect"],
         "summary": "Redirect Detail",
         "description": "",
         "operationId": "redirect-detail",
@@ -13323,6 +13331,7 @@
         "deprecated": false
       },
       "put": {
+        "tags": ["Redirect"],
         "summary": "Update Redirect",
         "description": "",
         "operationId": "update-redirect",
@@ -13397,6 +13406,7 @@
         "deprecated": false
       },
       "delete": {
+        "tags": ["Redirect"],
         "summary": "Delete Redirect",
         "description": "",
         "operationId": "delete-redirect",
@@ -13449,7 +13459,7 @@
     },
     "/openapi/2022-01/redirects/detail": {
       "post": {
-        "tags": ["Discounts"],
+        "tags": ["Redirect"],
         "summary": "Search Redirect",
         "description": "",
         "operationId": "search-redirect",
@@ -19355,6 +19365,7 @@
         "deprecated": false
       },
       "get": {
+        "tags":["Billing API"],
         "summary": "Get Recurring Application Charge List",
         "description": "get recurring application charge list",
         "operationId": "get-recurring-application-charge-list",
