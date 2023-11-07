@@ -24769,18 +24769,6 @@
             "description": "Order's ID",
             "schema": { "type": "string" },
             "required": true
-          },
-          {
-            "name": "kind",
-            "description": "transcation kind",
-            "schema": { "type": "string" },
-            "required": true
-          },
-          {
-            "name": "payment_channel",
-            "description": "Transcation's payment channel",
-            "schema": { "type": "string" },
-            "required": true
           }
         ],
         "requestBody": {
@@ -24789,7 +24777,14 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "transaction": { "type": "object", "properties": {} }
+                  "kind":{
+                    "type":"string",
+                    "example":""
+                  },
+                  "payment_channel":{
+                    "type":"string",
+                    "example":"paypal"
+                  }
                 }
               }
             }
