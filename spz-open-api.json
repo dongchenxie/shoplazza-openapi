@@ -26376,7 +26376,7 @@
           {
             "name": "owner_resource",
             "in": "path",
-            "description": "Owner resource type of meta field definition",
+            "description": "Owner resource type of meta field definition, including 'product_variant' , 'product' , and 'collection'",
             "schema": { "type": "string" },
             "required": true
           }
@@ -26462,7 +26462,7 @@
           {
             "name": "owner_resource",
             "in": "path",
-            "description": "Owner resource type of meta field definition",
+            "description": "Owner resource type of meta field definition, including 'product_variant' , 'product' , and 'collection'",
             "schema": { "type": "string" },
             "required": true
           }
@@ -26743,7 +26743,7 @@
           {
             "name": "owner_resource",
             "in": "path",
-            "description": "Owner resource type of meta field definition",
+            "description": "Owner resource type of meta field definition, including 'product_variant' , 'product' , and 'collection'",
             "schema": { "type": "string" },
             "required": true
           },
