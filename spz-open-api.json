@@ -24769,6 +24769,20 @@
             "description": "Order's ID",
             "schema": { "type": "string" },
             "required": true
+          },
+          {
+            "name": "kind",
+            "in": "body",
+            "description": "transcation kind",
+            "schema": { "type": "string" },
+            "required": true
+          },
+          {
+            "name": "payment_channel",
+            "in": "body",
+            "description": "Transcation's payment channel",
+            "schema": { "type": "string" },
+            "required": true
           }
         ],
         "requestBody": {
