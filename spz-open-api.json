@@ -683,7 +683,7 @@
                             },
                             "price": {
                               "type": "string",
-                              "description": "price"
+                              "description": "price, set it to \"0.00\" if you want to leave the price empty."
                             },
                             "sku": { "type": "string", "description": "SKU" },
                             "barcode": {
@@ -1560,7 +1560,7 @@
                             },
                             "price": {
                               "type": "string",
-                              "description": "price"
+                              "description": "price, set it to \"0.00\" if you want to leave the price empty."
                             },
                             "sku": { "type": "string", "description": "SKU" },
                             "barcode": {
@@ -2145,7 +2145,7 @@
                         "type": "string",
                         "description": "compare at price ( original price )"
                       },
-                      "price": { "type": "string", "description": "price" },
+                      "price": { "type": "string", "description": "price, set it to \"0.00\" if you want to leave the price empty." },
                       "sku": { "type": "string", "description": "SKU" },
                       "barcode": {
                         "type": "string",
@@ -2454,7 +2454,7 @@
                         "type": "string",
                         "description": "compare at price ( original price )"
                       },
-                      "price": { "type": "string", "description": "price" },
+                      "price": { "type": "string", "description": "price, set it to \"0.00\" if you want to leave the price empty." },
                       "position": {
                         "type": "integer",
                         "description": "position",
