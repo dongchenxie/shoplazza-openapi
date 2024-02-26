@@ -6584,6 +6584,14 @@
                                   "tax_text": {
                                     "type": "string",
                                     "example": "CPF/CNPJ"
+                                  },
+                                  "id_number": {
+                                    "type": "string",
+                                    "example": "32010219800101001X"
+                                  },
+                                  "id_number_text": {
+                                    "type": "string",
+                                    "example": "ID Number"
                                   }
                                 }
                               }
@@ -8134,6 +8142,14 @@
                                 "tax_text": {
                                   "type": "string",
                                   "example": "CPF/CNPJ"
+                                },
+                                "id_number": {
+                                  "type": "string",
+                                  "example": "32010219800101001X"
+                                },
+                                "id_number_text": {
+                                  "type": "string",
+                                  "example": "ID Number"
                                 }
                               }
                             }
