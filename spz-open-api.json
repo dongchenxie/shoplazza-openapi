@@ -6580,18 +6580,21 @@
                               "extra_info": {
                                 "type": "object",
                                 "properties": {
-                                  "cpf": { "type": "string", "example": "123" },
+                                  "cpf": { "type": "string", "example": "123", "description": "Tax identification number"},
                                   "tax_text": {
                                     "type": "string",
-                                    "example": "CPF/CNPJ"
+                                    "example": "CPF/CNPJ",
+                                    "description": "Tax identification number documentation"
                                   },
                                   "id_number": {
                                     "type": "string",
-                                    "example": "32010219800101001X"
+                                    "example": "32010219800101001X",
+                                    "description": "Identity card"
                                   },
                                   "id_number_text": {
                                     "type": "string",
-                                    "example": "ID Number"
+                                    "example": "ID Number",
+                                    "description": "Identity card documentation"
                                   }
                                 }
                               }
@@ -8138,18 +8141,21 @@
                             "extra_info": {
                               "type": "object",
                               "properties": {
-                                "cpf": { "type": "string", "example": "123" },
+                                "cpf": { "type": "string", "example": "123", "description": "Tax identification number"},
                                 "tax_text": {
                                   "type": "string",
-                                  "example": "CPF/CNPJ"
+                                  "example": "CPF/CNPJ",
+                                  "description": "Tax identification number documentation"
                                 },
                                 "id_number": {
                                   "type": "string",
-                                  "example": "32010219800101001X"
+                                  "example": "32010219800101001X",
+                                  "description": "Identity card"
                                 },
                                 "id_number_text": {
                                   "type": "string",
-                                  "example": "ID Number"
+                                  "example": "ID Number",
+                                  "description": "Identity card documentation"
                                 }
                               }
                             }
