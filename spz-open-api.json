@@ -4029,6 +4029,10 @@
                       "product_ids": {
                         "type": "string",
                         "description": "Product IDs inside this collection, separated by comma, for example: `0097cfc8-6ec3-40ed-ab9f-6f2231b705a6,0097cfc8-6ec3-40ed-ab9f-6f2231b705a6`"
+                      },
+                      "is_clear_all_product_ids": {
+                        "type": "string",
+                        "description": "Whether to unbind all products associated with the album"
                       }
                     }
                   }
@@ -5399,6 +5403,10 @@
                   "tracking_url": {
                     "type": "string",
                     "description": "Tracking Url"
+                  },
+                  "send_email": {
+                    "type": "string",
+                    "description": "Whether to send email notifications"
                   }
                 }
               }
