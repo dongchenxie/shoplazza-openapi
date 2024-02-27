@@ -11881,7 +11881,7 @@
           {
             "name": "status",
             "in": "query",
-            "description": "",
+            "description": "After-sales status",
             "schema": { "type": "string" }
           },
           {
