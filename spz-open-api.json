@@ -16003,14 +16003,6 @@
                         "description": "Whether to subscribe marketing sms campaign",
                         "default": true
                       },
-                      "password": {
-                        "type": "string",
-                        "description": "Password, e.g. `123456`"
-                      },
-                      "password_confirmation": {
-                        "type": "string",
-                        "description": "Password confirmation, e.g. `123456`"
-                      },
                       "tags": {
                         "type": "string",
                         "description": "Tags, e.g. `New Customer,Repeat Customer`"
@@ -19556,6 +19548,10 @@
                       "example": "Super Duper Expensive action"
                     },
                     "price": { "type": "string", "example": "100.00" },
+                    "confirm_url": {
+                      "type": "string",
+                      "example": "https://{subdomain}.myshoplaza.com/admin/smart_apps/angora/app_store/charges/s1deCNrkHePwO3HDDZb_zfWJAge07nzNckPyfM_Hvp0/356714323462063172/recurring/confirm?signature=69c827b70e05c772d7b8d3472b4b2fe2"
+                    },
                     "return_url": {
                       "type": "string",
                       "example": "http://test.myshoplaza.com"
