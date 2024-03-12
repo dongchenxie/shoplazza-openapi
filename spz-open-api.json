@@ -15341,7 +15341,7 @@
                 "properties": {
                   "customer": {
                     "type": "object",
-                    "required": ["contact_type"],
+                    "required": ["contact_type", "register_at"],
                     "properties": {
                       "contact_type": {
                         "type": "string",
@@ -15469,8 +15469,7 @@
                             "first_name",
                             "last_name",
                             "country",
-                            "country_code",
-                            "register_at"
+                            "country_code"
                           ],
                           "type": "object"
                         }
