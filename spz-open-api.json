@@ -15387,6 +15387,7 @@
                       },
                       "register_at": {
                         "type": "string",
+                        "example": "2024-03-11T03:32:00Z",
                         "description": "Customer registration time. Without this field, you cannot sign in"
                       },
                       "addresses": {
@@ -15468,7 +15469,8 @@
                             "first_name",
                             "last_name",
                             "country",
-                            "country_code"
+                            "country_code",
+                            "register_at"
                           ],
                           "type": "object"
                         }
