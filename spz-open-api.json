@@ -15388,7 +15388,7 @@
                       "register_at": {
                         "type": "string",
                         "description": "Customer registration time. Without this field, you cannot sign in"
-                      },,
+                      },
                       "addresses": {
                         "type": "array",
                         "description": "Addresses",
