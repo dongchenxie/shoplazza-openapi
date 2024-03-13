@@ -15385,7 +15385,7 @@
                         "type": "string",
                         "description": "Tags, e.g. `New Customer,Repeat Customer`"
                       },
-                      "register_at": {
+                      "registered_at": {
                         "type": "string",
                         "example": "2024-03-11T03:32:00Z",
                         "description": "Customer registration time. Without this field, you cannot sign in"
