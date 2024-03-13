@@ -15512,6 +15512,10 @@
                           "type": "string",
                           "example": "+8615423233434"
                         },
+                        "registered": {
+                          "type": "boolean",
+                          "example": true
+                        },
                         "accepts_marketing": {
                           "type": "boolean",
                           "example": false,
