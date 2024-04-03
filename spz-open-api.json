@@ -3544,17 +3544,17 @@
                 "type": "object",
                 "properties": {
                   "compare_at_price": {
-                    "type": "number",
+                    "type": "string",
                     "description": "compare at price ( original price )",
                     "examples": [
-                      200
+                      "200"
                     ]
                   },
                   "price": {
-                    "type": "number",
+                    "type": "string",
                     "description": "price, set it to \"0.00\" if you want to leave the price empty.",
                     "examples": [
-                      200
+                      "200"
                     ]
                   },
                   "barcode": {
@@ -3574,10 +3574,10 @@
                     "nullable": true
                   },
                   "Weight": {
-                    "type": "integer",
+                    "type": "string",
                     "description": "weight",
                     "examples": [
-                      10
+                      "10"
                     ]
                   },
                   "weight_unit": {
@@ -3586,17 +3586,17 @@
                     "default": "kg"
                   },
                   "cost_price": {
-                    "type": "number",
+                    "type": "string",
                     "description": "cost price",
                     "examples": [
-                      10
+                      "10"
                     ]
                   },
                   "retail_price": {
-                    "type": "number",
+                    "type": "string",
                     "description": "Suggested retail price",
                     "examples": [
-                      20
+                      "20"
                     ]
                   }
                 }
