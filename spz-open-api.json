@@ -3522,6 +3522,7 @@
     },
     "/openapi/2022-01/variants/sku/{sku}": {
       "put": {
+        "tags": ["Product"],
         "summary": "Update Variant By SKU",
         "deprecated": false,
         "description": "",
@@ -3812,6 +3813,7 @@
     },
     "/openapi/2022-01/products/sku/{sku}/variants": {
       "get": {
+        "tags": ["Product"],
         "summary": "Variant List By SKU",
         "deprecated": false,
         "description": "",
