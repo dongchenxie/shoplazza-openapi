@@ -3520,6 +3520,564 @@
         "deprecated": false
       }
     },
+    "/openapi/2022-01/variants/sku/{sku}": {
+      "put": {
+        "summary": "Update Variant By SKU",
+        "deprecated": false,
+        "description": "",
+        "tags": [ ],
+        "parameters": [
+          {
+            "name": "sku",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "compare_at_price": {
+                    "type": "number",
+                    "description": "compare at price ( original price )"
+                  },
+                  "price": {
+                    "type": "number",
+                    "description": "price, set it to \"0.00\" if you want to leave the price empty."
+                  },
+                  "barcode": {
+                    "type": "string",
+                    "description": "bar code"
+                  },
+                  "note": {
+                    "type": "string",
+                    "description": "note"
+                  },
+                  "inventory_quantity": {
+                    "type": "integer",
+                    "description": "inventory quantity",
+                    "nullable": true
+                  },
+                  "Weight": {
+                    "type": "integer",
+                    "description": "weight"
+                  },
+                  "weight_unit": {
+                    "type": "string",
+                    "description": "unit of weight,  possible value are: `kg`, `g`, `lb`, `oz`"
+                  },
+                  "cost_price": {
+                    "type": "number",
+                    "description": "cost price"
+                  },
+                  "retail_price": {
+                    "type": "number",
+                    "description": "Suggested retail price"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "variant": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "examples": [
+                            "91d50761-949f-4917-a5d3-2c4b586708e7"
+                          ]
+                        },
+                        "product_id": {
+                          "type": "string",
+                          "examples": [
+                            "df63c505-074f-47a7-ba4d-b624a281258e"
+                          ]
+                        },
+                        "title": {
+                          "type": "string",
+                          "examples": [
+                            "Green"
+                          ]
+                        },
+                        "price": {
+                          "type": "string",
+                          "examples": [
+                            "199.00"
+                          ]
+                        },
+                        "sku": {
+                          "type": "string",
+                          "examples": [
+                            "IPOD2008GREEN"
+                          ]
+                        },
+                        "position": {
+                          "type": "integer",
+                          "default": 0,
+                          "examples": [
+                            3
+                          ]
+                        },
+                        "inventory_quantity": {
+                          "type": "integer",
+                          "default": 0,
+                          "examples": [
+                            22
+                          ]
+                        },
+                        "compare_at_price": {
+                          "type": "string",
+                          "examples": [
+                            "0.00"
+                          ]
+                        },
+                        "option1": {
+                          "type": "string",
+                          "examples": [
+                            "Green"
+                          ]
+                        },
+                        "option2": {
+                          "type": "string",
+                          "examples": [
+                            ""
+                          ]
+                        },
+                        "option3": {
+                          "type": "string",
+                          "examples": [
+                            ""
+                          ]
+                        },
+                        "created_at": {
+                          "type": "string",
+                          "examples": [
+                            "2018-10-31T13:02:19-04:00"
+                          ]
+                        },
+                        "updated_at": {
+                          "type": "string",
+                          "examples": [
+                            "2018-10-31T13:02:19-04:00"
+                          ]
+                        },
+                        "barcode": {
+                          "type": "string",
+                          "examples": [
+                            "1234_green"
+                          ]
+                        },
+                        "note": {
+                          "type": "string",
+                          "examples": [
+                            "xxxx"
+                          ]
+                        },
+                        "weight": {
+                          "type": "string",
+                          "examples": [
+                            "1.25"
+                          ]
+                        },
+                        "weight_unit": {
+                          "type": "string",
+                          "examples": [
+                            "lb"
+                          ]
+                        },
+                        "image_id": {
+                          "type": "string",
+                          "examples": [
+                            "0510dace-34da-4555-a896-495e0cb1ed6e"
+                          ]
+                        },
+                        "image": {
+                          "type": "object",
+                          "properties": {
+                            "src": {
+                              "type": "string",
+                              "examples": [
+                                "http://cdn.shoplazza.com/example.jpg"
+                              ]
+                            },
+                            "width": {
+                              "type": "string",
+                              "examples": [
+                                ""
+                              ]
+                            },
+                            "height": {
+                              "type": "string",
+                              "examples": [
+                                ""
+                              ]
+                            },
+                            "alt": {
+                              "type": "string",
+                              "examples": [
+                                ""
+                              ]
+                            }
+                          }
+                        },
+                        "cost_price": {
+                          "type": "string",
+                          "examples": [
+                            "123.123"
+                          ]
+                        },
+                        "wholesale_price": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "price": {
+                                "type": "string"
+                              },
+                              "min_quantity": {
+                                "type": "integer"
+                              }
+                            }
+                          }
+                        },
+                        "retail_price": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "variant": {
+                        "id": "91d50761-949f-4917-a5d3-2c4b586708e7",
+                        "product_id": "df63c505-074f-47a7-ba4d-b624a281258e",
+                        "title": "Green",
+                        "price": "199.00",
+                        "sku": "IPOD2008GREEN",
+                        "position": 3,
+                        "inventory_quantity": 22,
+                        "compare_at_price": "0.00",
+                        "option1": "Green",
+                        "option2": "",
+                        "option3": "",
+                        "created_at": "2018-10-31T13:02:19-04:00",
+                        "updated_at": "2018-10-31T13:02:19-04:00",
+                        "barcode": "1234_green",
+                        "note": "xxxx",
+                        "weight": "1.25",
+                        "weight_unit": "lb",
+                        "image_id": "0510dace-34da-4555-a896-495e0cb1ed6e",
+                        "image": {
+                          "src": "http://cdn.shoplazza.com/example.jpg",
+                          "width": "",
+                          "height": "",
+                          "alt": ""
+                        },
+                        "cost_price": "123.123",
+                        "wholesale_price": [
+                          {
+                            "price": "200.00",
+                            "min_quantity": 1
+                          }
+                        ],
+                        "retail_price": "10"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [ ]
+      }
+    },
+    "/openapi/2022-01/products/sku/{sku}/variants": {
+      "get": {
+        "summary": "Variant List By SKU",
+        "deprecated": false,
+        "description": "",
+        "tags": [ ],
+        "parameters": [
+          {
+            "name": "sku",
+            "in": "path",
+            "description": "SKU",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "variants": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "examples": [
+                              "91d50761-949f-4917-a5d3-2c4b586708e7"
+                            ]
+                          },
+                          "product_id": {
+                            "type": "string",
+                            "examples": [
+                              "df63c505-074f-47a7-ba4d-b624a281258e"
+                            ]
+                          },
+                          "title": {
+                            "type": "string",
+                            "examples": [
+                              "Green"
+                            ]
+                          },
+                          "price": {
+                            "type": "string",
+                            "examples": [
+                              "199.00"
+                            ]
+                          },
+                          "sku": {
+                            "type": "string",
+                            "examples": [
+                              "IPOD2008GREEN"
+                            ]
+                          },
+                          "position": {
+                            "type": "integer",
+                            "default": 0,
+                            "examples": [
+                              3
+                            ]
+                          },
+                          "inventory_quantity": {
+                            "type": "integer",
+                            "default": 0,
+                            "examples": [
+                              22
+                            ]
+                          },
+                          "compare_at_price": {
+                            "type": "string",
+                            "examples": [
+                              "0.00"
+                            ]
+                          },
+                          "option1": {
+                            "type": "string",
+                            "examples": [
+                              "Green"
+                            ]
+                          },
+                          "option2": {
+                            "type": "string",
+                            "examples": [
+                              ""
+                            ]
+                          },
+                          "option3": {
+                            "type": "string",
+                            "examples": [
+                              ""
+                            ]
+                          },
+                          "created_at": {
+                            "type": "string",
+                            "examples": [
+                              "2018-10-31T13:02:19-04:00"
+                            ]
+                          },
+                          "updated_at": {
+                            "type": "string",
+                            "examples": [
+                              "2018-10-31T13:02:19-04:00"
+                            ]
+                          },
+                          "barcode": {
+                            "type": "string",
+                            "examples": [
+                              "1234_green"
+                            ]
+                          },
+                          "note": {
+                            "type": "string",
+                            "examples": [
+                              "xxxx"
+                            ]
+                          },
+                          "weight": {
+                            "type": "string",
+                            "examples": [
+                              "1.25"
+                            ]
+                          },
+                          "weight_unit": {
+                            "type": "string",
+                            "examples": [
+                              "lb"
+                            ]
+                          },
+                          "image_id": {
+                            "type": "string",
+                            "examples": [
+                              "0510dace-34da-4555-a896-495e0cb1ed6e"
+                            ]
+                          },
+                          "image": {
+                            "type": "object",
+                            "properties": {
+                              "src": {
+                                "type": "string",
+                                "examples": [
+                                  "http://cdn.shoplazza.com/example.jpg"
+                                ]
+                              },
+                              "width": {
+                                "type": "string",
+                                "examples": [
+                                  ""
+                                ]
+                              },
+                              "height": {
+                                "type": "string",
+                                "examples": [
+                                  ""
+                                ]
+                              },
+                              "alt": {
+                                "type": "string",
+                                "examples": [
+                                  ""
+                                ]
+                              }
+                            }
+                          },
+                          "cost_price": {
+                            "type": "string",
+                            "examples": [
+                              "123.123"
+                            ]
+                          },
+                          "wholesale_price": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "price": {
+                                  "type": "string"
+                                },
+                                "min_quantity": {
+                                  "type": "integer"
+                                }
+                              }
+                            }
+                          },
+                          "extend": {
+                            "type": "object",
+                            "properties": {
+                              "length": {
+                                "type": "number"
+                              },
+                              "width": {
+                                "type": "number"
+                              },
+                              "height": {
+                                "type": "number"
+                              },
+                              "dimension_unit": {
+                                "type": "string"
+                              },
+                              "origin_country_code": {
+                                "type": "string"
+                              },
+                              "hs_code": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "variants": [
+                        {
+                          "id": "91d50761-949f-4917-a5d3-2c4b586708e7",
+                          "product_id": "df63c505-074f-47a7-ba4d-b624a281258e",
+                          "title": "Green",
+                          "price": "199.00",
+                          "sku": "IPOD2008GREEN",
+                          "position": 3,
+                          "inventory_quantity": 22,
+                          "compare_at_price": "0.00",
+                          "option1": "Green",
+                          "option2": "",
+                          "option3": "",
+                          "created_at": "2018-10-31T13:02:19-04:00",
+                          "updated_at": "2018-10-31T13:02:19-04:00",
+                          "barcode": "1234_green",
+                          "note": "xxxx",
+                          "weight": "1.25",
+                          "weight_unit": "lb",
+                          "image_id": "0510dace-34da-4555-a896-495e0cb1ed6e",
+                          "image": {
+                            "src": "http://cdn.shoplazza.com/example.jpg",
+                            "width": "",
+                            "height": "",
+                            "alt": ""
+                          },
+                          "cost_price": "123.123",
+                          "wholesale_price": [
+                            {
+                              "price": "200.00",
+                              "min_quantity": 1
+                            }
+                          ],
+                          "extend": null
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [ ]
+      }
+    },
+
     "/openapi/2022-01/collections": {
       "get": {
         "tags": ["Product"],
