@@ -3526,7 +3526,6 @@
         "summary": "Update Variant By SKU",
         "deprecated": false,
         "description": "",
-        "tags": [ ],
         "parameters": [
           {
             "name": "sku",
@@ -3588,7 +3587,7 @@
         },
         "responses": {
           "200": {
-            "description": "成功",
+            "description": "200",
             "content": {
               "application/json": {
                 "schema": {
@@ -3817,7 +3816,6 @@
         "summary": "Variant List By SKU",
         "deprecated": false,
         "description": "",
-        "tags": [ ],
         "parameters": [
           {
             "name": "sku",
@@ -3831,7 +3829,7 @@
         ],
         "responses": {
           "200": {
-            "description": "成功",
+            "description": "200",
             "content": {
               "application/json": {
                 "schema": {
