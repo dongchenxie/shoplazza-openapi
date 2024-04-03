@@ -3583,6 +3583,10 @@
                   "retail_price": {
                     "type": "string",
                     "description": "Suggested retail price"
+                  },
+                  "refuse_multi_result": {
+                    "type": "boolean",
+                    "description": "false: If sku matches multiple sub-items, update the matched sub-items normally.  true: Rejects the update if the sku matches more than one subitem"
                   }
                 }
               }
