@@ -3522,10 +3522,10 @@
     },
     "/openapi/2022-01/variants/sku/{sku}": {
       "put": {
-        "tags": ["Product"],
         "summary": "Update Variant By SKU",
         "deprecated": false,
         "description": "",
+        "tags": ["Product"],
         "parameters": [
           {
             "name": "sku",
@@ -3545,11 +3545,17 @@
                 "properties": {
                   "compare_at_price": {
                     "type": "number",
-                    "description": "compare at price ( original price )"
+                    "description": "compare at price ( original price )",
+                    "examples": [
+                      200
+                    ]
                   },
                   "price": {
                     "type": "number",
-                    "description": "price, set it to \"0.00\" if you want to leave the price empty."
+                    "description": "price, set it to \"0.00\" if you want to leave the price empty.",
+                    "examples": [
+                      200
+                    ]
                   },
                   "barcode": {
                     "type": "string",
@@ -3562,23 +3568,36 @@
                   "inventory_quantity": {
                     "type": "integer",
                     "description": "inventory quantity",
+                    "examples": [
+                      10
+                    ],
                     "nullable": true
                   },
                   "Weight": {
                     "type": "integer",
-                    "description": "weight"
+                    "description": "weight",
+                    "examples": [
+                      10
+                    ]
                   },
                   "weight_unit": {
                     "type": "string",
-                    "description": "unit of weight,  possible value are: `kg`, `g`, `lb`, `oz`"
+                    "description": "unit of weight,  possible value are: `kg`, `g`, `lb`, `oz`",
+                    "default": "kg"
                   },
                   "cost_price": {
                     "type": "number",
-                    "description": "cost price"
+                    "description": "cost price",
+                    "examples": [
+                      10
+                    ]
                   },
                   "retail_price": {
                     "type": "number",
-                    "description": "Suggested retail price"
+                    "description": "Suggested retail price",
+                    "examples": [
+                      20
+                    ]
                   }
                 }
               }
@@ -3812,16 +3831,17 @@
     },
     "/openapi/2022-01/products/sku/{sku}/variants": {
       "get": {
-        "tags": ["Product"],
         "summary": "Variant List By SKU",
         "deprecated": false,
         "description": "",
+        "tags": ["Product"],
         "parameters": [
           {
             "name": "sku",
             "in": "path",
             "description": "SKU",
             "required": true,
+            "example": "-A-A001002",
             "schema": {
               "type": "string"
             }
