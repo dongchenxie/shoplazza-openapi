@@ -10021,6 +10021,1349 @@
         "deprecated": false
       }
     },
+    "/openapi/2022-01/orders/number/{number}": {
+      "get": {
+        "summary": "Get Order Details By Number",
+        "deprecated": false,
+        "operationId": "order-details-by-number",
+        "description": "",
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "name": "number",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "200",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "order": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "examples": [
+                            "11218-00000001"
+                          ]
+                        },
+                        "note": {
+                          "type": "string",
+                          "examples": [
+                            "abc"
+                          ]
+                        },
+                        "number": {
+                          "type": "string",
+                          "examples": [
+                            "00000001"
+                          ]
+                        },
+                        "financial_status": {
+                          "type": "string",
+                          "examples": [
+                            "paid"
+                          ]
+                        },
+                        "status": {
+                          "type": "string",
+                          "examples": [
+                            "placed"
+                          ]
+                        },
+                        "cancel_reason": {
+                          "type": "string"
+                        },
+                        "payment_method": {
+                          "type": "string",
+                          "examples": [
+                            "online"
+                          ]
+                        },
+                        "fulfillment_status": {
+                          "type": "string",
+                          "examples": [
+                            "partially_shipped"
+                          ]
+                        },
+                        "discount_code": {
+                          "type": "string",
+                          "examples": [
+                            ""
+                          ]
+                        },
+                        "discount_applications": {
+                          "type": "string",
+                          "examples": [
+                            "[]"
+                          ]
+                        },
+                        "customer_note": {
+                          "type": "string",
+                          "examples": [
+                            "note"
+                          ]
+                        },
+                        "landing_site": {
+                          "type": "string",
+                          "examples": [
+                            "http://www.example.com?source=abc"
+                          ]
+                        },
+                        "buyer_accepts_marketing": {
+                          "type": "boolean",
+                          "default": true,
+                          "examples": [
+                            false
+                          ]
+                        },
+                        "currency": {
+                          "type": "string",
+                          "examples": [
+                            "USD"
+                          ]
+                        },
+                        "total_price": {
+                          "type": "string",
+                          "examples": [
+                            "16.99"
+                          ]
+                        },
+                        "total_discount": {
+                          "type": "string",
+                          "examples": [
+                            "100.00"
+                          ]
+                        },
+                        "total_tax": {
+                          "type": "string",
+                          "examples": [
+                            "10.00"
+                          ]
+                        },
+                        "total_shipping": {
+                          "type": "string",
+                          "examples": [
+                            "1.00"
+                          ]
+                        },
+                        "sub_total": {
+                          "type": "string",
+                          "examples": [
+                            "15.00"
+                          ]
+                        },
+                        "code_discount_total": {
+                          "type": "string",
+                          "examples": [
+                            "1.00"
+                          ]
+                        },
+                        "line_item_discount_total": {
+                          "type": "string",
+                          "examples": [
+                            "1.00"
+                          ]
+                        },
+                        "tags": {
+                          "type": "string",
+                          "examples": [
+                            "a, b"
+                          ]
+                        },
+                        "created_at": {
+                          "type": "string",
+                          "examples": [
+                            "2014-04-25T16:15:47Z"
+                          ]
+                        },
+                        "updated_at": {
+                          "type": "string",
+                          "examples": [
+                            "2014-04-25T16:15:47Z"
+                          ]
+                        },
+                        "canceled_at": {
+                          "type": "string"
+                        },
+                        "customer_deleted_at": {
+                          "type": "string",
+                          "examples": [
+                            "2014-04-25T16:15:47Z"
+                          ]
+                        },
+                        "deleted_at": {
+                          "type": "string",
+                          "examples": [
+                            "2014-04-25T16:15:47Z"
+                          ]
+                        },
+                        "placed_at": {
+                          "type": "string",
+                          "examples": [
+                            "2014-04-25T16:15:47Z"
+                          ]
+                        },
+                        "total_refund_price": {
+                          "type": "string",
+                          "examples": [
+                            "0.00"
+                          ]
+                        },
+                        "total_refund_tax": {
+                          "type": "string",
+                          "examples": [
+                            "0.00"
+                          ]
+                        },
+                        "total_refund_discount": {
+                          "type": "string",
+                          "examples": [
+                            "0.00"
+                          ]
+                        },
+                        "refund_status": {
+                          "type": "string",
+                          "examples": [
+                            "none"
+                          ]
+                        },
+                        "total_tip_received": {
+                          "type": "string",
+                          "examples": [
+                            "0.00"
+                          ]
+                        },
+                        "browser_ip": {
+                          "type": "string",
+                          "examples": [
+                            "192.168.0.1"
+                          ]
+                        },
+                        "source": {
+                          "type": "string",
+                          "examples": [
+                            "http://www.example.com?source=abc"
+                          ]
+                        },
+                        "last_landing_url": {
+                          "type": "string",
+                          "examples": [
+                            "http://www.example.com?source=abc"
+                          ]
+                        },
+                        "email_status": {
+                          "type": "string",
+                          "examples": [
+                            "send"
+                          ]
+                        },
+                        "recovery_status": {
+                          "type": "string",
+                          "examples": [
+                            "success"
+                          ]
+                        },
+                        "total_paid": {
+                          "type": "string",
+                          "examples": [
+                            "16.99"
+                          ]
+                        },
+                        "source_name": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "string",
+                              "examples": [
+                                "Direct"
+                              ]
+                            },
+                            "created_at": {
+                              "type": "string",
+                              "examples": [
+                                "2014-04-25T16:15:47Z"
+                              ]
+                            }
+                          }
+                        },
+                        "last_referrer_show": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "string",
+                              "examples": [
+                                "Others"
+                              ]
+                            },
+                            "created_at": {
+                              "type": "string",
+                              "examples": [
+                                "2014-04-25T16:15:47Z"
+                              ]
+                            }
+                          }
+                        },
+                        "shipping_line": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "examples": [
+                                "free"
+                              ]
+                            }
+                          }
+                        },
+                        "customer": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "examples": [
+                                "ef0318fe-e0ed-4551-a5bc-8b8e36c4f90f"
+                              ]
+                            },
+                            "email": {
+                              "type": "string",
+                              "examples": [
+                                "bob.norman@hostmail.com"
+                              ]
+                            },
+                            "first_name": {
+                              "type": "string",
+                              "examples": [
+                                "Bob"
+                              ]
+                            },
+                            "last_name": {
+                              "type": "string",
+                              "examples": [
+                                "Norman"
+                              ]
+                            },
+                            "phone": {
+                              "type": "string",
+                              "examples": [
+                                ""
+                              ]
+                            },
+                            "created_at": {
+                              "type": "string",
+                              "examples": [
+                                "2018-11-02T12:30:10Z"
+                              ]
+                            },
+                            "updated_at": {
+                              "type": "string",
+                              "examples": [
+                                "2018-11-02T12:30:10Z"
+                              ]
+                            },
+                            "orders_count": {
+                              "type": "integer",
+                              "default": 0,
+                              "examples": [
+                                1
+                              ]
+                            },
+                            "total_spent": {
+                              "type": "string",
+                              "examples": [
+                                "41.94"
+                              ]
+                            }
+                          }
+                        },
+                        "shipping_address": {
+                          "type": "object",
+                          "properties": {
+                            "first_name": {
+                              "type": "string",
+                              "examples": [
+                                "Bob"
+                              ]
+                            },
+                            "last_name": {
+                              "type": "string",
+                              "examples": [
+                                "Norman"
+                              ]
+                            },
+                            "address1": {
+                              "type": "string",
+                              "examples": [
+                                "Chestnut Street 92"
+                              ]
+                            },
+                            "address2": {
+                              "type": "string",
+                              "examples": [
+                                ""
+                              ]
+                            },
+                            "phone": {
+                              "type": "string",
+                              "examples": [
+                                "555-625-1199"
+                              ]
+                            },
+                            "city": {
+                              "type": "string",
+                              "examples": [
+                                "Louisville"
+                              ]
+                            },
+                            "zip": {
+                              "type": "string",
+                              "examples": [
+                                "40202"
+                              ]
+                            },
+                            "province": {
+                              "type": "string",
+                              "examples": [
+                                "Kentucky"
+                              ]
+                            },
+                            "country": {
+                              "type": "string",
+                              "examples": [
+                                "United States"
+                              ]
+                            },
+                            "company": {
+                              "type": "string",
+                              "examples": [
+                                ""
+                              ]
+                            },
+                            "latitude": {
+                              "type": "string",
+                              "examples": [
+                                "45.41634"
+                              ]
+                            },
+                            "longitude": {
+                              "type": "string",
+                              "examples": [
+                                "-75.6868"
+                              ]
+                            },
+                            "name": {
+                              "type": "string",
+                              "examples": [
+                                "Bob Norman"
+                              ]
+                            },
+                            "country_code": {
+                              "type": "string",
+                              "examples": [
+                                "US"
+                              ]
+                            },
+                            "province_code": {
+                              "type": "string",
+                              "examples": [
+                                "US-KY"
+                              ]
+                            },
+                            "phone_area_code": {
+                              "type": "string",
+                              "examples": [
+                                "80"
+                              ]
+                            },
+                            "email": {
+                              "type": "string",
+                              "examples": [
+                                "bob.norman@hostmail.com"
+                              ]
+                            },
+                            "area": {
+                              "type": "string",
+                              "examples": [
+                                "sz"
+                              ]
+                            },
+                            "extra_info": {
+                              "type": "object",
+                              "properties": {
+                                "cpf": {
+                                  "type": "string",
+                                  "description": "Tax identification number",
+                                  "examples": [
+                                    "123"
+                                  ]
+                                },
+                                "tax_text": {
+                                  "type": "string",
+                                  "description": "Tax identification number documentation",
+                                  "examples": [
+                                    "CPF/CNPJ"
+                                  ]
+                                },
+                                "id_number": {
+                                  "type": "string",
+                                  "description": "Identity card",
+                                  "examples": [
+                                    "32010219800101001X"
+                                  ]
+                                },
+                                "id_number_text": {
+                                  "type": "string",
+                                  "description": "Identity card documentation",
+                                  "examples": [
+                                    "ID Number"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "billing_address": {
+                          "type": "object",
+                          "properties": {
+                            "first_name": {
+                              "type": "string",
+                              "examples": [
+                                "Bob"
+                              ]
+                            },
+                            "last_name": {
+                              "type": "string",
+                              "examples": [
+                                "Norman"
+                              ]
+                            },
+                            "address1": {
+                              "type": "string",
+                              "examples": [
+                                "Chestnut Street 92"
+                              ]
+                            },
+                            "address2": {
+                              "type": "string",
+                              "examples": [
+                                ""
+                              ]
+                            },
+                            "city": {
+                              "type": "string",
+                              "examples": [
+                                "Louisville"
+                              ]
+                            },
+                            "zip": {
+                              "type": "string",
+                              "examples": [
+                                "40202"
+                              ]
+                            },
+                            "province": {
+                              "type": "string",
+                              "examples": [
+                                "Kentucky"
+                              ]
+                            },
+                            "country": {
+                              "type": "string",
+                              "examples": [
+                                "United States"
+                              ]
+                            },
+                            "company": {
+                              "type": "string",
+                              "examples": [
+                                ""
+                              ]
+                            },
+                            "latitude": {
+                              "type": "string",
+                              "examples": [
+                                "45.41634"
+                              ]
+                            },
+                            "longitude": {
+                              "type": "string",
+                              "examples": [
+                                "-75.6868"
+                              ]
+                            },
+                            "name": {
+                              "type": "string",
+                              "examples": [
+                                "Bob Norman"
+                              ]
+                            },
+                            "country_code": {
+                              "type": "string",
+                              "examples": [
+                                "US"
+                              ]
+                            },
+                            "province_code": {
+                              "type": "string",
+                              "examples": [
+                                "KY"
+                              ]
+                            },
+                            "email": {
+                              "type": "string",
+                              "examples": [
+                                "test@gmail.com"
+                              ]
+                            },
+                            "area": {
+                              "type": "string",
+                              "examples": [
+                                "sz"
+                              ]
+                            },
+                            "phone": {
+                              "type": "string",
+                              "examples": [
+                                "555-625-1199"
+                              ]
+                            }
+                          }
+                        },
+                        "payment_line": {
+                          "type": "object",
+                          "properties": {
+                            "payment_channel": {
+                              "type": "string",
+                              "examples": [
+                                "paypal"
+                              ]
+                            },
+                            "payment_method": {
+                              "type": "string",
+                              "examples": [
+                                "online"
+                              ]
+                            },
+                            "transaction_no": {
+                              "type": "string",
+                              "examples": [
+                                "52Y26167A2351800A"
+                              ]
+                            },
+                            "merchant_id": {
+                              "type": "string",
+                              "examples": [
+                                "26167A23518"
+                              ]
+                            },
+                            "merchant_email": {
+                              "type": "string",
+                              "examples": [
+                                "abc@def.com"
+                              ]
+                            }
+                          }
+                        },
+                        "line_items": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "examples": [
+                                  "db4469f3-5e56-4c69-a2b6-03e81d24d5b5"
+                                ]
+                              },
+                              "product_id": {
+                                "type": "string",
+                                "examples": [
+                                  "db4469f3-5e56-4c69-a2b6-03e81d24d5b5"
+                                ]
+                              },
+                              "variant_id": {
+                                "type": "string",
+                                "examples": [
+                                  "db4469f3-5e56-4c69-a2b6-03e81d24d5b5"
+                                ]
+                              },
+                              "variant_title": {
+                                "type": "string",
+                                "examples": [
+                                  "XXX"
+                                ]
+                              },
+                              "product_title": {
+                                "type": "string",
+                                "examples": [
+                                  "abc"
+                                ]
+                              },
+                              "product_handle": {
+                                "type": "string",
+                                "examples": [
+                                  "abc"
+                                ]
+                              },
+                              "quantity": {
+                                "type": "integer",
+                                "default": 0,
+                                "examples": [
+                                  10
+                                ]
+                              },
+                              "note": {
+                                "type": "string",
+                                "examples": [
+                                  "red"
+                                ]
+                              },
+                              "fulfillment_status": {
+                                "type": "string",
+                                "examples": [
+                                  "waiting"
+                                ]
+                              },
+                              "sku": {
+                                "type": "string",
+                                "examples": [
+                                  "xxx"
+                                ]
+                              },
+                              "weight_unit": {
+                                "type": "string",
+                                "examples": [
+                                  "g"
+                                ]
+                              },
+                              "vendor": {
+                                "type": "string",
+                                "examples": [
+                                  "XXX"
+                                ]
+                              },
+                              "product_url": {
+                                "type": "string",
+                                "examples": [
+                                  "http://www.a.com/abc"
+                                ]
+                              },
+                              "compare_at_price": {
+                                "type": "string",
+                                "examples": [
+                                  "12.34"
+                                ]
+                              },
+                              "image": {
+                                "type": "string",
+                                "examples": [
+                                  "http://www.a.com/xxx.jpg"
+                                ]
+                              },
+                              "price": {
+                                "type": "string",
+                                "examples": [
+                                  "12.34"
+                                ]
+                              },
+                              "total": {
+                                "type": "string",
+                                "examples": [
+                                  "123.40"
+                                ]
+                              },
+                              "weight": {
+                                "type": "string",
+                                "examples": [
+                                  "1.23"
+                                ]
+                              },
+                              "properties": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "name": {
+                                      "type": "string",
+                                      "examples": [
+                                        "color"
+                                      ]
+                                    },
+                                    "value": {
+                                      "type": "string",
+                                      "examples": [
+                                        "red"
+                                      ]
+                                    }
+                                  }
+                                }
+                              },
+                              "custom_properties": {
+                                "type": "object",
+                                "properties": {
+                                  "prop": {
+                                    "type": "string",
+                                    "examples": [
+                                      "value"
+                                    ]
+                                  }
+                                }
+                              },
+                              "refund_quantity": {
+                                "type": "integer",
+                                "default": 0,
+                                "examples": [
+                                  0
+                                ]
+                              },
+                              "refund_total": {
+                                "type": "string",
+                                "examples": [
+                                  "0.00"
+                                ]
+                              }
+                            }
+                          }
+                        },
+                        "fulfillments": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "examples": [
+                                  "db4469f3-5e56-4c69-a2b6-03e81d24d5b5"
+                                ]
+                              },
+                              "order_id": {
+                                "type": "string",
+                                "examples": [
+                                  "db4469f3-5e56-4c69-a2b6-03e81d24d5b5"
+                                ]
+                              },
+                              "status": {
+                                "type": "string",
+                                "examples": [
+                                  "waiting"
+                                ]
+                              },
+                              "tracking_company": {
+                                "type": "string",
+                                "examples": [
+                                  "company"
+                                ]
+                              },
+                              "tracking_number": {
+                                "type": "string",
+                                "examples": [
+                                  "1Z2345"
+                                ]
+                              },
+                              "tracking_company_code": {
+                                "type": "string",
+                                "examples": [
+                                  "3306"
+                                ]
+                              },
+                              "created_at": {
+                                "type": "string",
+                                "examples": [
+                                  "2018-11-02T12:30:10Z"
+                                ]
+                              },
+                              "updated_at": {
+                                "type": "string",
+                                "examples": [
+                                  "2018-11-02T12:30:10Z"
+                                ]
+                              },
+                              "line_items": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string",
+                                      "examples": [
+                                        "db4469f3-5e56-4c69-a2b6-03e81d24d5b5"
+                                      ]
+                                    },
+                                    "product_id": {
+                                      "type": "string",
+                                      "examples": [
+                                        "db4469f3-5e56-4c69-a2b6-03e81d24d5b5"
+                                      ]
+                                    },
+                                    "variant_id": {
+                                      "type": "string",
+                                      "examples": [
+                                        "db4469f3-5e56-4c69-a2b6-03e81d24d5b5"
+                                      ]
+                                    },
+                                    "variant_title": {
+                                      "type": "string",
+                                      "examples": [
+                                        "XXX"
+                                      ]
+                                    },
+                                    "product_title": {
+                                      "type": "string",
+                                      "examples": [
+                                        "abc"
+                                      ]
+                                    },
+                                    "product_handle": {
+                                      "type": "string",
+                                      "examples": [
+                                        "abc"
+                                      ]
+                                    },
+                                    "quantity": {
+                                      "type": "integer",
+                                      "default": 0,
+                                      "examples": [
+                                        10
+                                      ]
+                                    },
+                                    "note": {
+                                      "type": "string",
+                                      "examples": [
+                                        "red"
+                                      ]
+                                    },
+                                    "fulfillment_status": {
+                                      "type": "string",
+                                      "examples": [
+                                        "waiting"
+                                      ]
+                                    },
+                                    "sku": {
+                                      "type": "string",
+                                      "examples": [
+                                        "xxx"
+                                      ]
+                                    },
+                                    "weight_unit": {
+                                      "type": "string",
+                                      "examples": [
+                                        "g"
+                                      ]
+                                    },
+                                    "vendor": {
+                                      "type": "string",
+                                      "examples": [
+                                        "XXX"
+                                      ]
+                                    },
+                                    "product_url": {
+                                      "type": "string",
+                                      "examples": [
+                                        "http://www.a.com/abc"
+                                      ]
+                                    },
+                                    "compare_at_price": {
+                                      "type": "string",
+                                      "examples": [
+                                        "12.34"
+                                      ]
+                                    },
+                                    "image": {
+                                      "type": "string",
+                                      "examples": [
+                                        "http://www.a.com/xxx.jpg"
+                                      ]
+                                    },
+                                    "price": {
+                                      "type": "string",
+                                      "examples": [
+                                        "12.34"
+                                      ]
+                                    },
+                                    "total": {
+                                      "type": "string",
+                                      "examples": [
+                                        "123.40"
+                                      ]
+                                    },
+                                    "weight": {
+                                      "type": "string",
+                                      "examples": [
+                                        "1.23"
+                                      ]
+                                    },
+                                    "properties": {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "object",
+                                        "properties": {
+                                          "name": {
+                                            "type": "string",
+                                            "examples": [
+                                              "color"
+                                            ]
+                                          },
+                                          "value": {
+                                            "type": "string",
+                                            "examples": [
+                                              "red"
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "custom_properties": {
+                                      "type": "object",
+                                      "properties": {
+                                        "prop": {
+                                          "type": "string",
+                                          "examples": [
+                                            "value"
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    "refund_quantity": {
+                                      "type": "integer",
+                                      "default": 0,
+                                      "examples": [
+                                        0
+                                      ]
+                                    },
+                                    "refund_total": {
+                                      "type": "string",
+                                      "examples": [
+                                        "0.00"
+                                      ]
+                                    },
+                                    "taxable": {
+                                      "type": "boolean",
+                                      "default": true,
+                                      "examples": [
+                                        false
+                                      ]
+                                    },
+                                    "requires_shipping": {
+                                      "type": "boolean",
+                                      "default": true,
+                                      "examples": [
+                                        true
+                                      ]
+                                    },
+                                    "shipping_quantity": {
+                                      "type": "integer",
+                                      "default": 0,
+                                      "examples": [
+                                        1
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "gift_card_total": {
+                          "type": "string",
+                          "examples": [
+                            "0.00"
+                          ]
+                        },
+                        "shipping_tax_total": {
+                          "type": "string",
+                          "examples": [
+                            "12.00"
+                          ]
+                        },
+                        "product_tax_included": {
+                          "type": "boolean",
+                          "default": true,
+                          "examples": [
+                            true
+                          ]
+                        },
+                        "additional_total": {
+                          "type": "string",
+                          "description": "Total additional fees"
+                        },
+                        "additional_prices": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "description": "Additional fee type"
+                            },
+                            "price": {
+                              "type": "string",
+                              "description": "Additional fee amount"
+                            }
+                          },
+                          "description": "List of additional fees"
+                        },
+                        "logistics_code": {
+                          "type": "string",
+                          "description": "Logistics code"
+                        },
+                        "refer_info": {
+                          "type": "string",
+                          "description": "User agent"
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "1": {
+                    "summary": "Result",
+                    "value": {
+                      "order": {
+                        "id": "11218-00000001",
+                        "note": "abc",
+                        "number": "00000001",
+                        "financial_status": "paid",
+                        "status": "placed",
+                        "cancel_reason": null,
+                        "payment_method": "online",
+                        "fulfillment_status": "partially_shipped",
+                        "discount_code": "",
+                        "discount_applications": "[]",
+                        "customer_note": "note",
+                        "landing_site": "http://www.example.com?source=abc",
+                        "buyer_accepts_marketing": false,
+                        "currency": "USD",
+                        "total_price": "16.99",
+                        "total_discount": "100.00",
+                        "total_tax": "10.00",
+                        "total_shipping": "1.00",
+                        "sub_total": "15.00",
+                        "code_discount_total": "1.00",
+                        "line_item_discount_total": "1.00",
+                        "tags": "a, b",
+                        "created_at": "2014-04-25T16:15:47Z",
+                        "updated_at": "2014-04-25T16:15:47Z",
+                        "canceled_at": null,
+                        "customer_deleted_at": "2014-04-25T16:15:47Z",
+                        "deleted_at": "2014-04-25T16:15:47Z",
+                        "placed_at": "2014-04-25T16:15:47Z",
+                        "total_refund_price": "0.00",
+                        "total_refund_tax": "0.00",
+                        "total_refund_discount": "0.00",
+                        "refund_status": "none",
+                        "total_tip_received": "0.00",
+                        "browser_ip": "192.168.0.1",
+                        "source": "http://www.example.com?source=abc",
+                        "last_landing_url": "http://www.example.com?source=abc",
+                        "email_status": "send",
+                        "recovery_status": "success",
+                        "total_paid": "16.99",
+                        "source_name": {
+                          "data": "Direct",
+                          "created_at": "2014-04-25T16:15:47Z"
+                        },
+                        "last_referrer_show": {
+                          "data": "Others",
+                          "created_at": "2014-04-25T16:15:47Z"
+                        },
+                        "shipping_line": {
+                          "name": "free"
+                        },
+                        "customer": {
+                          "id": "ef0318fe-e0ed-4551-a5bc-8b8e36c4f90f",
+                          "email": "bob.norman@hostmail.com",
+                          "first_name": "Bob",
+                          "last_name": "Norman",
+                          "phone": "",
+                          "created_at": "2018-11-02T12:30:10Z",
+                          "updated_at": "2018-11-02T12:30:10Z",
+                          "orders_count": 1,
+                          "total_spent": "41.94"
+                        },
+                        "shipping_address": {
+                          "first_name": "Bob",
+                          "last_name": "Norman",
+                          "address1": "Chestnut Street 92",
+                          "address2": "",
+                          "phone": "555-625-1199",
+                          "city": "Louisville",
+                          "zip": "40202",
+                          "province": "Kentucky",
+                          "country": "United States",
+                          "company": "",
+                          "latitude": "45.41634",
+                          "longitude": "-75.6868",
+                          "name": "Bob Norman",
+                          "country_code": "US",
+                          "province_code": "US-KY",
+                          "phone_area_code": "80",
+                          "email": "bob.norman@hostmail.com",
+                          "area": "sz",
+                          "extra_info": {
+                            "cpf": "123",
+                            "tax_text": "CPF/CNPJ"
+                          }
+                        },
+                        "billing_address": {
+                          "first_name": "Bob",
+                          "last_name": "Norman",
+                          "address1": "Chestnut Street 92",
+                          "address2": "",
+                          "city": "Louisville",
+                          "zip": "40202",
+                          "province": "Kentucky",
+                          "country": "United States",
+                          "company": "",
+                          "latitude": "45.41634",
+                          "longitude": "-75.6868",
+                          "name": "Bob Norman",
+                          "country_code": "US",
+                          "province_code": "KY",
+                          "email": "test@gmail.com",
+                          "area": "sz",
+                          "phone": "555-625-1199"
+                        },
+                        "payment_line": {
+                          "payment_channel": "paypal",
+                          "payment_method": "online",
+                          "transaction_no": "52Y26167A2351800A",
+                          "merchant_id": "26167A23518",
+                          "merchant_email": "abc@def.com"
+                        },
+                        "line_items": [
+                          {
+                            "id": "db4469f3-5e56-4c69-a2b6-03e81d24d5b5",
+                            "product_id": "db4469f3-5e56-4c69-a2b6-03e81d24d5b5",
+                            "variant_id": "db4469f3-5e56-4c69-a2b6-03e81d24d5b5",
+                            "variant_title": "XXX",
+                            "product_title": "abc",
+                            "product_handle": "abc",
+                            "quantity": 10,
+                            "note": "red",
+                            "fulfillment_status": "waiting",
+                            "sku": "xxx",
+                            "weight_unit": "g",
+                            "vendor": "XXX",
+                            "product_url": "http://www.a.com/abc",
+                            "compare_at_price": "12.34",
+                            "image": "http://www.a.com/xxx.jpg",
+                            "price": "12.34",
+                            "total": "123.40",
+                            "weight": "1.23",
+                            "properties": [
+                              {
+                                "name": "color",
+                                "value": "red"
+                              }
+                            ],
+                            "custom_properties": {
+                              "prop": "value"
+                            },
+                            "refund_quantity": 0,
+                            "refund_total": "0.00"
+                          }
+                        ],
+                        "fulfillments": [
+                          {
+                            "id": "db4469f3-5e56-4c69-a2b6-03e81d24d5b5",
+                            "order_id": "db4469f3-5e56-4c69-a2b6-03e81d24d5b5",
+                            "status": "waiting",
+                            "tracking_company": "company",
+                            "tracking_number": "1Z2345",
+                            "tracking_company_code": "3306",
+                            "created_at": "2018-11-02T12:30:10Z",
+                            "updated_at": "2018-11-02T12:30:10Z",
+                            "line_items": [
+                              {
+                                "id": "db4469f3-5e56-4c69-a2b6-03e81d24d5b5",
+                                "product_id": "db4469f3-5e56-4c69-a2b6-03e81d24d5b5",
+                                "variant_id": "db4469f3-5e56-4c69-a2b6-03e81d24d5b5",
+                                "variant_title": "XXX",
+                                "product_title": "abc",
+                                "product_handle": "abc",
+                                "quantity": 10,
+                                "note": "red",
+                                "fulfillment_status": "waiting",
+                                "sku": "xxx",
+                                "weight_unit": "g",
+                                "vendor": "XXX",
+                                "product_url": "http://www.a.com/abc",
+                                "compare_at_price": "12.34",
+                                "image": "http://www.a.com/xxx.jpg",
+                                "price": "12.34",
+                                "total": "123.40",
+                                "weight": "1.23",
+                                "properties": [
+                                  {
+                                    "name": "color",
+                                    "value": "red"
+                                  }
+                                ],
+                                "custom_properties": {
+                                  "prop": "value"
+                                },
+                                "refund_quantity": 0,
+                                "refund_total": "0.00",
+                                "taxable": false,
+                                "requires_shipping": true,
+                                "shipping_quantity": 1
+                              }
+                            ]
+                          }
+                        ],
+                        "gift_card_total": "0.00",
+                        "shipping_tax_total": "12.00",
+                        "product_tax_included": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "404",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "examples": [
+                          "Unable to find resource"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "1": {
+                    "summary": "Result",
+                    "value": {
+                      "errors": [
+                        "Unable to find resource"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [ ]
+      }
+    },
     "/openapi/2022-01/orders/count": {
       "get": {
         "tags": ["Order"],
