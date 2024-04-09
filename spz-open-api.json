@@ -10026,7 +10026,6 @@
         "summary": "Get Order Details By Number",
         "deprecated": false,
         "description": "",
-        "operationId": "order-details",
         "tags": [
           "Order"
         ],
