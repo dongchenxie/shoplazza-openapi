@@ -8138,7 +8138,127 @@
         "tags": [
           "Order"
         ],
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "ids",
+            "in": "query",
+            "description": "Order's IDs, please use comma as separator, for example `183211-00000005,183211-00000006`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Limit per page, default: `10`, maximum: `250`",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Page number",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "created_at_min",
+            "in": "query",
+            "description": "Filter orders created at or after date, for example: `2016-01-18T23:41:00Z`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "created_at_max",
+            "in": "query",
+            "description": "Filter orders created at or before date, for example: `2016-01-18T23:41:00Z`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "updated_at_min",
+            "in": "query",
+            "description": "Filter orders last updated at or after date, for example:  `2016-01-18T23:41:00Z`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "updated_at_max",
+            "in": "query",
+            "description": "Filter orders last updated at or before date, for example: `2016-01-18T23:41:00Z`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "placed_at_min",
+            "in": "query",
+            "description": "Filter orders placed at or after date, for example: `2016-01-18T23:41:00Z`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "placed_at_max",
+            "in": "query",
+            "description": "Filter orders placed at or before date, for example: `2016-01-18T23:41:00Z`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "description": "Filter orders by status: `opened`, `placed`, `finished`, `cancelled`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "financial_status",
+            "in": "query",
+            "description": "Filter orders by financial status: `waiting`, `paying`, `paid`, `cancelled`, `failed`, `refunding`, `refund_failed`, `refunded`, `partially_refunded`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fulfillment_status",
+            "in": "query",
+            "description": "Filter orders by fulfillment status: `initialled`, `waiting`, `partially_shipped`, `shipped`, `partially_finished`, `finished`, `cancelled`, `returning`, `returned`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "recovery_status",
+            "in": "query",
+            "description": "Filter orders by recovery status: `waiting`, `sending`, `recalling`, `failed`, `success`",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "200",
