@@ -1556,7 +1556,8 @@
                   "properties": {
                     "cursor": {
                       "type": "string",
-                      "example": "MjAyMS0wNy0wOVQwMToxNzowNFojN2JiMWUwMTUtMDVhMi00Yzk0LWIxNDktMTE1MDEzYmEwODEz"
+                      "example": "MjAyMS0wNy0wOVQwMToxNzowNFojN2JiMWUwMTUtMDVhMi00Yzk0LWIxNDktMTE1MDEzYmEwODEz",
+                      "description":"996icu"
                     },
                     "pre_cursor": {
                       "type": "string",
